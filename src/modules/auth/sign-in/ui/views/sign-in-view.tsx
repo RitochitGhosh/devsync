@@ -137,7 +137,7 @@ export const SignInView = () => {
                                 </Alert>
                             )}
 
-                            <Button disabled={pending} type="submit" className="w-full">
+                            <Button disabled={pending} type="submit" className="w-full h-10">
                                 Sign in
                             </Button>
 
@@ -153,7 +153,7 @@ export const SignInView = () => {
                                     variant="outline"
                                     type="button"
                                     onClick={() => onSocial("google")}
-                                    className="w-full"
+                                    className="w-full h-10 py-4"
                                 >
                                     <FaGoogle />
                                 </Button>
@@ -172,10 +172,11 @@ export const SignInView = () => {
                     </Form>
 
                     {/* Right side: gradient panel */}
-                    <div className="hidden md:flex h-full flex-col gap-y-4 items-center justify-center rounded-r-2xl">
-                        <img src="/logo.png" alt="Logo" className="h-[92px] w-[92px]" />
-                        <p className="text-2xl font-semibold text-white">DevSync</p>
+                    <div className="hidden md:flex h-full flex-col gap-y-4 items-center justify-center rounded-r-2xl border border-blue-500 bg-gradient-to-br from-blue-600/30 via-blue-700/20 to-blue-900/30 backdrop-blur-sm shadow-inner">
+                        <img src="/logo.png" alt="Logo" className="" />
+                        <p className="text-2xl font-semibold text-white drop-shadow-sm">DevSync</p>
                     </div>
+
 
                 </CardContent>
             </Card>

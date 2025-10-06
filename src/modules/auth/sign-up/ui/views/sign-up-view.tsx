@@ -199,7 +199,7 @@ export const SignUpView = () => {
                                 <Button
                                     disabled={pending}
                                     type="submit"
-                                    className="w-full"
+                                    className="w-full h-10"
                                 >
                                     Sign up
                                 </Button>
@@ -214,12 +214,12 @@ export const SignUpView = () => {
                                         disabled={pending}
                                         variant={"outline"}
                                         type="button"
-                                        className="w-full"
+                                        className="w-full h-10 py-4"
                                         onClick={() => {
                                             onSocial("google")
                                         }}
                                     >
-                                        <FaGoogle />
+                                        <FaGoogle className="size-4"/>
                                     </Button>
                                 </div>
                                 <div className="text-center text-sm">
@@ -233,9 +233,9 @@ export const SignUpView = () => {
                     </Form>
 
                     {/* Right side: gradient panel */}
-                    <div className="hidden md:flex h-full flex-col gap-y-4 items-center justify-center rounded-r-2xl">
-                        <img src="/logo.png" alt="Logo" className="h-[92px] w-[92px]" />
-                        <p className="text-2xl font-semibold text-white">DevSync</p>
+                    <div className="hidden md:flex h-full flex-col gap-y-4 items-center justify-center rounded-r-2xl border border-blue-500 bg-gradient-to-br from-blue-600/30 via-blue-700/20 to-blue-900/30 backdrop-blur-sm shadow-inner">
+                        <img src="/logo.png" alt="Logo" className="" />
+                        <p className="text-2xl font-semibold text-white drop-shadow-sm">DevSync</p>
                     </div>
                 </CardContent>
             </Card>
